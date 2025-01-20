@@ -12,7 +12,7 @@ export const ListContainer = styled("ul")(({ theme }) => ({
 
   // Media query for screen sizes less than 600px (mobile view)
   "@media (max-width:600px)": {
-    justifyContent: "flex-start",
+    justifyContent: "center",
     gap: 0,
     padding: 0,
   },

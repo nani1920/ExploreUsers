@@ -101,7 +101,7 @@ function UserDetails() {
   }, [params]);
 
   const goBack = () => {
-    navigate(-1);
+    navigate("/");
   };
 
   const renderUserDetailsSuccessCont = () => (
@@ -183,8 +183,23 @@ function UserDetails() {
         }}
       >
         <ProfileCont>
-          <ProfileIcon sx={{ backgroundColor: randomColor }}>
-            <Typography variant="h2" fontWeight={400}>
+          <ProfileIcon
+            sx={{
+              backgroundColor: randomColor,
+              "@media (max-width:600px)": {
+                mb: 4,
+              },
+            }}
+          >
+            <Typography
+              variant="h2"
+              fontWeight={400}
+              sx={{
+                "@media (max-width:600px)": {
+                  fontSize: 40,
+                },
+              }}
+            >
               {UserDetailsList?.name?.[0] || ""}
             </Typography>
           </ProfileIcon>
@@ -628,6 +643,7 @@ function UserDetails() {
     for (let i = 0; i < count; i++) {
       skeletons.push(
         <Box
+          key={uuidv4()}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -635,15 +651,8 @@ function UserDetails() {
             height: 230,
           }}
         >
-          <Skeleton key={i} variant="rectangular" width={220} height={200} />
-          <Skeleton
-            key={uuidv4()}
-            variant="rectangular"
-            width={220}
-            height={20}
-            m={1}
-            p={1}
-          />
+          <Skeleton variant="rectangular" width={220} height={200} />
+          <Skeleton variant="rectangular" width={220} height={20} m={1} p={1} />
         </Box>
       );
     }

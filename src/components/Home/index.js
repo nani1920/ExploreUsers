@@ -127,11 +127,15 @@ export default function Home() {
   };
 
   const renderLoadingView = () => {
-    let count = 10;
+    const count = 10;
     const skeletons = [];
+
     for (let i = 0; i < count; i++) {
+      const boxKey = uuidv4();
+
       skeletons.push(
         <Box
+          key={boxKey}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -139,15 +143,8 @@ export default function Home() {
             height: 230,
           }}
         >
-          <Skeleton key={i} variant="rectangular" width={220} height={200} />
-          <Skeleton
-            key={uuidv4()}
-            variant="rectangular"
-            width={220}
-            height={20}
-            m={1}
-            p={1}
-          />
+          <Skeleton variant="rectangular" width={220} height={200} />
+          <Skeleton variant="rectangular" width={220} height={20} m={1} p={1} />
         </Box>
       );
     }

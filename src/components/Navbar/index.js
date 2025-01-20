@@ -77,7 +77,7 @@ function Navbar() {
     toggleTheme();
   };
 
-  const logoUrl = isDarkMode ? "./darkLogo.jpg" : "./wisdomLogo2.png";
+  const logoUrl = isDarkMode ? "/darkLogo.jpg" : "/wisdomLogo2.png";
 
   return (
     <div>
