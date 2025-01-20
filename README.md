@@ -79,8 +79,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 5. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the application.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-```
+
 ## Contributing
 
 Feel free to contribute by submitting pull requests or reporting issues. Contributions are welcome!
