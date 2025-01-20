@@ -1,74 +1,86 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
 # ExploreUsers
->>>>>>> 6c1cc6373ed983b20f4c17606b4493392458145c
+
+This is a React-based application that allows users to explore a list of users, view their details, and sort them alphabetically. It uses the JSONPlaceholder API for user data and Material UI for styling and components.
+
+## Features
+
+- *User Listing:* Displays a paginated list of users.
+- *Alphabetical Sorting:* Allows users to sort the user list by A-Z or Z-A order.
+- *User Details:* Displays detailed information about a selected user, including their company and address.
+- *Responsive Design:* The application is designed to be responsive and work well on different screen sizes.
+- *Dark Mode Support:* Provides a toggle to switch between light and dark modes for better readability.
+- *Error Handling:* Handles API errors and displays an appropriate failure view.
+- *Loading Indicators:* Displays skeleton loaders while the application fetches user data.
+- *Search:* Functionality to search and filter users.
+
+## Tech Stack
+
+- *React:* JavaScript library for building user interfaces.
+- *Material UI:* Component library for implementing UI elements.
+- *React Router DOM:* For routing within the application.
+- *uuid:* To generate unique IDs.
+- *reactjs-popup:* Library for modals and tooltips.
+- *JSONPlaceholder API:* To get the user data.
+- *CSS:* For styling.
+
+## Folder Structure
+
+- *public/*: Contains static files such as HTML, logos, and other images.
+- *src/*: Contains the application source code:
+    - *components/*: Reusable UI components:
+        - *Home/*: Main page component displaying all user list.
+        - *Navbar/*: The navigation bar with the dark mode switch.
+        - *PageNotFound/*: A page for when a route doesn't match.
+        - *Tabs/*: Component for switching between user tabs.
+        - *UserCard/*: Component to display a user in a list.
+        - *UserDetails/*: Component to display details of a user.
+    - *context/*: Contains theme and user context files:
+        - *theme.js*: Configurations for the dark/light mode theme.
+        - *userContext.js*: User context.
+    - *App.js*: Main application component.
+    - *index.js*: Entry point of the application.
+    - *style.js*: Contains reusable components.
+- *.gitignore*: Specifies intentionally untracked files that Git should ignore.
+- *FETCH_HEAD*: The local storage location for the last git fetch.
+- *LICENSE*: Information about the license the project is using.
+- *README.md*: The project's instructions file.
+- *package-lock.json*: Contains the dependency information for the project.
+- *package.json*: Contains information such as the app name, versions, and scripts.
+
+
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+``
+
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/nani1920/ExploreUsers.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd ExploreUsers
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server
+   ```sh
+   npm start
+   ```
+5. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the application.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
+## Contributing
+
+Feel free to contribute by submitting pull requests or reporting issues. Contributions are welcome!
